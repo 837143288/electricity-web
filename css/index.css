@@ -1,0 +1,236 @@
+.main {
+  height: 455px;
+  width: 980px;
+  margin-left: 220px;
+  margin-top: 10px;
+}
+.main h1 {
+  float: left;
+  width: 721px;
+  height: 455px;
+  background: url(../upload/focus1.png);
+  margin-right: 10px;
+}
+.main .focus {
+  position: relative;
+  float: left;
+  width: 721px;
+  height: 455px;
+  overflow: hidden;
+}
+.focus ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600%;
+}
+.focus ul li {
+  float: left;
+}
+.arrow-l, .arrow-r {
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 24px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  z-index: 2;
+  color: #fff;
+}
+.arrow-r {
+  right: 0;
+}
+.circle {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -20px;
+}
+.circle li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  /*background-color: #fff;*/
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  margin: 0 3px;
+  border-radius: 50%;
+  /*鼠标经过显示小手*/
+  cursor: pointer;
+}
+.current {
+  background-color: #fff;
+}
+.main .newsflash {
+  margin-left: 10px;
+  float: left;
+  width: 249px;
+  height: 455px;
+}
+.news {
+  height: 165px;
+  border: 1px solid #e4e4e4;
+}
+.news .news_hd {
+  height: 33px;
+  line-height: 33px;
+  border-bottom: 1px dotted #e4e4e4; /* 点线 */
+}
+.news .news_hd h5 {
+  float: left;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.news .news_hd a {
+  float: right;
+  font-size: 12px;
+}
+.news .news_hd a::after {
+  font-family: "icomoon";
+  content: "\e920";
+  margin: 0 10px 0 4px;
+  font-size: 12px;
+}
+.news .news_bd {
+  padding-left: 10px;
+}
+.news .news_bd li {
+  margin-top: 7px;
+  overflow: hidden; /* 溢出部分隐藏 */
+  white-space: nowrap; /* 不允许换行 */
+  text-overflow: ellipsis; /* 超出部分省略号显示 */
+}
+.lifeservice {
+  overflow: hidden; /* 隐藏溢出部分 */
+  height: 210px;
+  border: 1px solid #e4e4e4;
+  border-top: 0;
+}
+.lifeservice ul li {
+  float: left;
+  height: 70px;
+  width: 63px;
+  border-right: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  text-align: center;
+}
+.lifeservice ul {
+  width: 252px;
+}
+.bargain {
+  height: 75px;
+  width: 250px;
+  margin-top: 6px;
+  background: url(../upload/bargain.png);
+}
+.lifeservice ul li i {
+  display: inline-block; /* 转化为行内块 */
+  width: 24px;
+  height: 24px;
+  background: url(../images/icons.png) no-repeat -17px -16px;
+  margin-top: 14px;
+}
+.recom {
+  margin-top: 10px;
+  height: 163px;
+  background-color: #ebebeb;
+}
+.recom .recom_hd {
+  float: left;
+  height: 163px;
+  width: 206px;
+  text-align: center;
+  background-color: #5c5251;
+}
+.recom .recom_hd i {
+  display: inline-block; /* 转化为行内块 */
+  margin-top: 30px;
+  width: 60px;
+  height: 60px;
+  background: url(../images/clock.png) no-repeat;
+}
+.recom .recom_hd p {
+  font-size: 18px;
+  color: #fff;
+}
+.recom .recom_bd li {
+  position: relative;
+  float: left;
+  width: 248px;
+  height: 163px;
+  background: url(../upload/recom_03.jpg);
+}
+.recom .recom_bd li:nth-child(-n + 4)::after {
+  /* 选中前三个li的after */
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 1px;
+  height: 143px;
+  background-color: #dddddd;
+}
+/* floor部分 */
+.box_hd {
+  height: 30px;
+  border-bottom: 2px solid #c81623;
+}
+.box_hd h3 {
+  float: left;
+  font-size: 18px;
+  color: #c81623;
+  font-weight: 400; /* 字体粗细 */
+}
+.tab_list {
+  float: right;
+  line-height: 30px;
+}
+.tab_list li {
+  float: left;
+}
+.tab_list li a {
+  margin: 0 10px;
+}
+.floor .w {
+  margin-top: 20px;
+}
+.box_bd {
+  height: 361px;
+}
+.tab_list_item > div {
+  float: left;
+  height: 361px;
+}
+.col_210 {
+  width: 210px;
+  background-color: #f9f9f9;
+}
+.col_210 ul {
+  margin-left: 10px;
+}
+.col_210 li {
+  padding: 10px 12px;
+  float: left;
+  border-bottom: 1px solid #ededed;
+  margin-left: 14px;
+}
+.col_210 li a {
+  font-size: 12px;
+  color: #666666;
+}
+.col_329 {
+  width: 329px;
+}
+.col_221 {
+  width: 221px;
+  border-right: 1px solid #ededed;
+}
+.col_219 {
+  width: 219px;
+}
+.bb {
+  display: block; /* a需要转换为块级元素 */
+  border-bottom: 1px solid #ededed;
+}

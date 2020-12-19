@@ -1,0 +1,275 @@
+/* 声明字体图标 路径变化 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.style_red {
+    color: #c81623;
+}
+/* 快捷导航栏 */
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    color: #666666;
+    background-color: #f1f1f1;
+}
+.shortcut ul li {
+    float: left;
+}
+.daohang ul li:nth-child(even) {    /* 偶数的li */
+    width: 1px;
+    height: 12px;
+    background-color: #666666;
+    margin: 9px 15px 0;
+}
+.arrow-icon::after {
+    content: '\e91e';
+    font-family: 'icomoon';     /* 调用字体图标 */
+    margin-left: 6px;
+}
+/* header头部 */
+.header {
+    position: relative;
+    height: 105px;
+}
+.logo {
+    position: absolute;
+    top: 25px;
+}
+.logo a {
+    display: block;
+    width: 175px;
+    height: 56px;
+    background: url(../images/logo.png);
+    font-size: 0;
+}
+.search {
+    position: absolute;
+    top: 25px;
+    left: 348px;
+    width: 538px;
+    height: 36px;
+
+}
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;    /* 搜索框向右移动10px */
+    border: 2px solid #b1191a;
+}
+.search button {
+    margin-left: -2px;
+    float: left;
+    width: 80px;
+    height: 32px;
+    color: white;
+    background-color: #b1191a;
+}
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 348px;
+}
+.hotwords a {
+    margin: 0 10px;
+}
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 140px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+.shopcar::before {
+    content: '\e93a';
+    font-family: 'icomoon';
+    margin-right: 4px;
+    color: #b1191a;
+}
+.shopcar::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    margin-left: 8px;
+}
+.count {
+    position: absolute;
+    top: -5px;
+    left: 100px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #e60012;
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0;    /* 圆角 */
+}
+/* nav导航 */
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+.nav .dropdown {
+    position: relative;
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+}
+.nav .navitems {
+    float: left;
+}
+.nav .dropdown .dt {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 45px;
+}
+.nav .dropdown .dd {
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+}
+.nav .dropdown .dd a {
+    color: #fff;
+    margin-left: 12px;
+}
+.nav .dropdown .dd li {
+    position: relative;
+    border-left: 1px solid #c81623;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+}
+.nav .dropdown .dd ul li::after {    /* 子绝父相 父是li */
+    position: absolute;
+    right: 5px;
+    color: #fff;
+    font-family: 'icomoon';
+    content: '\e920';
+    font-size: 14px;
+    
+}
+.nav .dropdown .dd li:hover {
+    background-color: #fff;
+}
+.nav .dropdown .dd li:hover a {     /* 鼠标经过li 改变a中的属性 */
+    color: #c81623;
+}
+.nav .dropdown .hid {
+    position: absolute;
+    top: 47px;
+    left: 210px;
+    z-index: 3;
+}
+.nav .dropdown .hid li {
+    display: none;
+    height: 31px;
+    width: 500px;
+    background-color: blanchedalmond;
+}
+.nav .dropdown .hid:hover {
+    display: block;
+}
+.navitems {
+    margin-left: 10px;
+}
+.navitems li {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+}
+.navitems li a {
+    padding: 0 25px;
+    font-size: 16px;
+    color: #333333;
+}
+.navitems li a:hover {
+    color: #c81623;
+}
+
+/* footer */
+footer {
+    height: 417px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+.mod_service ul li {
+    float: left;
+    height: 50px;
+    width: 175px;
+    margin: 0 32.5px;
+}
+.mod_service ul li h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons.png) no-repeat -252px -2px;
+    margin-right: 4px;
+}
+.service_txt h4 {
+    font-size: 14px;
+    margin-top: 6px;
+}
+.service_txt p {
+    font-size: 12px;
+}
+.mod_help {
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+    
+}
+.mod_help dt {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+.mod_help dl {
+    float: left;
+    margin: 0 50px;
+    width: 90px;
+}
+.mod_help dl:last-of-type {      /* mod_help中的最后一个dl */
+    text-align: center;
+}
+.ma {
+    width: 90px;
+    height: 90px;
+    background: url(../images/wx_cz.jpg);
+}
+.mod_copyright {
+    text-align: center;
+}
+.mod_copyright .about {
+    margin: 15px 0 10px;
+}
+.mod_copyright a {
+    margin: 0 10px;
+}
